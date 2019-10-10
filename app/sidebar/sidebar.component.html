@@ -1,0 +1,33 @@
+
+  <div class="well">
+
+    <h4>Search</h4>
+    <form >
+        <div class="input-group">
+            <input name="search" type="text" class="form-control" required>
+            <span class="input-group-btn">
+                <button name="submit" class="btn btn-default" type="submit">
+                    <span class="glyphicon glyphicon-search"></span>
+                </button>
+            </span>
+        </div>
+    </form>
+
+  </div>
+
+  <div class="well">
+    <h4>Login</h4>
+    <form [formGroup]="userLogin">
+        <div class="form-group">
+            <input type="text" name="username" class="form-control" placeholder = "username" formControlName="username" #username>
+        </div>
+        <div class="form-group">
+            <input type="password" name="pwd" class="form-control" placeholder = "password" formControlName="password" #password>
+        </div>
+        <span class="input-group-btn">
+            <input value="submit" class="btn btn-success" type="submit" (click)="onSubmit()">
+        </span>
+    </form>
+  </div>
+
+  <a routerLink="/register" routerLinkActive="active" > <img src="../assets/allpostpics/registernow.gif" alt="HTML5 Icon" style="width:358px;height:140px;"></a>

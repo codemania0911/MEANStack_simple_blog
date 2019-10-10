@@ -1,0 +1,40 @@
+<div id="wrapper">
+    <app-adminnav></app-adminnav>
+    <div id="page-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">
+                        All Users
+                    </h1>
+                    <table class="table table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Username</th>
+                            <th>Firstname</th>
+                            <th>Lastname</th>
+                            <th>Email</th>
+                            <th>Role</th>
+                            <th>Change Role</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let results of result">
+                            <td>{{results._id}}</td>
+                            <td>{{results.username}}</td>
+                            <td>{{results.firstname}}</td>
+                            <td>{{results.lastname}}</td>
+                            <td>{{results.email}}</td>
+                            <td>{{results.role}}</td>
+                            <td><a (click)="changeRole(results.username)">Make Admin</a></td>
+                            <td><a (click)="userDel(results.username, results.role)"><i class='fa fa-times fa-lg'></i>delete</a></td>
+                        </tr>
+                    </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

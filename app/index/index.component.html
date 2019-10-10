@@ -1,0 +1,26 @@
+<app-navbar></app-navbar>
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+      <div *ngFor="let results of result">
+        <p>{{results.title}}</p>
+        <p>by {{results.author}}</p>
+        <p><span>{{results.postdate}}</span></p>
+        <hr><a href="#"></a>
+        <img class="img-responsive img-rounded" src="../assets/allpostpics/{{results.image}}" alt="900 * 300">
+        <hr>
+        <p>{{results.content}}</p>
+        <a href="#"><button type="button" class="btn btn-primary">Read More<span class="glyphicon glyphicon-chevron-right"></span></button></a>
+        <hr>
+        <hr>        
+      </div>
+      <ul class="pager">
+        <li class="previous"><a href="#"><span class="glyphicon glyphicon-arrow-left"></span> Older</a></li>
+        <li class="next"><a href="#">Newer <span class="glyphicon glyphicon-arrow-right"></span></a></li>
+      </ul>
+    </div>
+    <div class="col-md-4">
+        <app-sidebar></app-sidebar>
+    </div>    
+  </div>
+</div>
