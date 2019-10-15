@@ -4,16 +4,18 @@ import { AuthenticationService } from 'src/authentication.service';
 
 @Injectable()
 export class RegistrationService {
-
+  
   _url = 'http://localhost:3000/register';
   _url_access = 'http://localhost:3000/users/access';
 
   constructor(private _http: HttpClient) { }
 
+  
   register(userData) {
     return this._http.post<any>(this._url, userData);
   }
 
+  
   loggedIn(){
     this._http.get<any>(this._url_access).subscribe ((response) => {
       
