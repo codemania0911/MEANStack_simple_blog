@@ -20,6 +20,7 @@ export interface TokenPayload {
     
 }
 
+
 @Injectable()
 export class AuthenticationService {
     private token: string
