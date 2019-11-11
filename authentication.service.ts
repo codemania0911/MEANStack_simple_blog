@@ -16,7 +16,6 @@ interface TokenResponse{
     token: string
 }
 
-
 export interface TokenPayload {
     
 }
