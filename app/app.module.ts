@@ -11,7 +11,6 @@ import { FooterComponent } from './footer/footer.component';
 import { RegisterprocessComponent } from './registerprocess/registerprocess.component';
 import { SearchComponent } from './search/search.component';
 import { PublicpostsComponent } from './publicposts/publicposts.component';
-
 import { AdminheaderComponent } from './admin/adminheader/adminheader.component';
 import { AdminnavComponent } from './admin/adminnav/adminnav.component';
 import { AdminfooterComponent } from './admin/adminfooter/adminfooter.component';
