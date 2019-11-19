@@ -38,12 +38,11 @@ export class UsersComponent implements OnInit {
     }else{
       this.http.post<any>('http://localhost:3000/users/delete', {"username":deluser})
         .subscribe((response) => { 
-          console.log('Success!', response)
-         
+          console.log('Success!', response);
+          alert("deleted!!!");
         },
         (error) => {console.error('Error!', error)}
       );
-      alert("deleted!!!");
     }
   }
 
