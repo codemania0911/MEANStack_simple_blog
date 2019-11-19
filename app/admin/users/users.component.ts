@@ -51,11 +51,10 @@ export class UsersComponent implements OnInit {
     let change = username;
     this.http.post<any>('http://localhost:3000/users/changeRole', {"username":change})
       .subscribe((response) => {
-        console.log('Success!', response)
-        
+        console.log('Success!', response);  
+        alert("changed!!!");
       },
       (error) => {console.error('Error!',error)}
     );
-    alert("changed!!!");
   }
 }
