@@ -26,7 +26,6 @@ export class RegistrationService {
         }
       },
       (error) => {
-        console.log("error1")
         return false
       }
     );
