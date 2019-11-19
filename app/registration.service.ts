@@ -23,7 +23,6 @@ export class RegistrationService {
           console.log("xxxxxxxx")
           return true;
         } else {
-          console.log("eeeeeeeeeeee")
           return false;
         }
       },
