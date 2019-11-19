@@ -20,7 +20,6 @@ export class RegistrationService {
     this._http.get<any>(this._url_access).subscribe ((response) => {
       
         if (response.status == 200) {
-          console.log("xxxxxxxx")
           return true;
         } else {
           return false;
