@@ -29,7 +29,6 @@ export class RegisterComponent implements OnInit {
     })
     
   }
-
   onSubmit() {
     console.log(JSON.stringify(this.userForm.value));
     this.http.post<any>('http://localhost:3000/users/register', this.userForm.value)
