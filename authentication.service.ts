@@ -20,7 +20,6 @@ export interface TokenPayload {
     
 }
 
-
 @Injectable()
 export class AuthenticationService {
     private token: string
@@ -64,7 +63,6 @@ export class AuthenticationService {
         return request
     }
 
-    
     public login(user: TokenPayload) : Observable<any> {
         const base = this.http.post(`/users/register`, user)
         const request = base.pipe(
