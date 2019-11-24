@@ -15,7 +15,7 @@ export class PostsComponent implements OnInit {
   ngOnInit() {
       this.http.get<any>('http://localhost:3000/posts/viewposts')
         .subscribe((response) => { 
-            console.log('Success!', response)
+            console.log('Success!', response);
             for(let i=0; i < response.length; i++){
               this.result.push({
                 _id: response[i]._id,
