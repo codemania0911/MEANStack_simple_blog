@@ -39,7 +39,6 @@ export class PostsComponent implements OnInit {
     .subscribe((response) => { 
       console.log('Success!', response);
     },
-
     (error) => {console.error('Error!', error)}
     );
   }
