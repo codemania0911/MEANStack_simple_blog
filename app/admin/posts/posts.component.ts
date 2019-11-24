@@ -29,7 +29,7 @@ export class PostsComponent implements OnInit {
               });
             }
           },
-          (error) => {console.error('Error!', error)}
+          (error) => {console.error('Error!', error);}
         );
   }
 
@@ -39,7 +39,7 @@ export class PostsComponent implements OnInit {
     .subscribe((response) => { 
       console.log('Success!', response);
     },
-    (error) => {console.error('Error!', error)}
+    (error) => {console.error('Error!', error);}
     );
   }
 
@@ -49,7 +49,7 @@ export class PostsComponent implements OnInit {
     .subscribe((response) => { 
       console.log('Success!', response)
     },
-      (error) => {console.error('Error!', error)}
+      (error) => {console.error('Error!', error);}
     );
   }
 }
