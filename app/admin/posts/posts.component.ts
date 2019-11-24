@@ -37,7 +37,7 @@ export class PostsComponent implements OnInit {
     let delauthor = author;
     this.http.post<any>('http://localhost:3000/posts/delete', {"author":delauthor})
     .subscribe((response) => { 
-      console.log('Success!', response)
+      console.log('Success!', response);
     },
 
     (error) => {console.error('Error!', error)}
