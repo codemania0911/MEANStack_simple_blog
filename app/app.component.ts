@@ -7,15 +7,4 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent {
   title = 'angblog';
-  // searchFunc(){
-  //   alert("search OK!");
-  // }
-
-  // loginFunc(){
-  //   alert("login OK!");
-  // }
-
-  // readFunc(){
-  //   alert("readMore OK!");
-  // }
 }
