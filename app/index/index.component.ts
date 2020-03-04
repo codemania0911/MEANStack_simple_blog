@@ -11,6 +11,7 @@ export class IndexComponent implements OnInit {
   public result = [];
   constructor( private http: HttpClient) { }
 
+  
   ngOnInit() {
     this.http.post<any>('http://localhost:3000/posts/blog', {"data":"request"})
       .subscribe((response) => { 
